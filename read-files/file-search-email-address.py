@@ -5,7 +5,9 @@ except:
     print("Bad filepath. Cannot open file.")
     quit()
 
-for line in filename:
+for line in filehandle:
     line = line.rstrip()
     if line.startswith("From:"):
-        print(line)
+        emaillist = line.split(" ")
+        email = emaillist[1]
+        print(email)
