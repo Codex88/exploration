@@ -8,6 +8,7 @@ try:
     filehandle = open(filename, encoding="utf-8")
 except:
     print("Bad filepath. Cannot open file.")
+    quit()
 
 # declare final dinctionaries
 email_addresses = dict()
@@ -15,7 +16,7 @@ email_usernames = dict()
 email_domains = dict()
 email_names = dict()
 
-# declare "get" lists for dictonaries
+# declare "get" lists for dictonary counts
 emails = list()
 usernames = list()
 domains = list()
