@@ -1,0 +1,10 @@
+# An infinite loop using continue with break escape
+
+while True:
+    line = input("> ")
+    if line[0] == "#":
+        continue
+    if line == "done":
+        break
+    print(line)
+print("Done!")

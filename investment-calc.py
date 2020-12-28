@@ -5,6 +5,6 @@ value = 0
 year = 1
 while year <= period:
     value = principle + (APY * principle)
-    print("Year {}: ${} USD".format(year, value))
+    print(f"Year {year}: ${value} USD")
     principle = value
     year = year + 1
